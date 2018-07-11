@@ -40,7 +40,7 @@ public class StartMenu : MonoBehaviour {
 		{
 			Debug.Log("DEAD!!!");
 			SceneManager.LoadScene("Main");
-		}
+		}//bob
 
 		*/
 	}
