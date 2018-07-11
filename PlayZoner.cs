@@ -6,15 +6,9 @@ public class PlayZoner : MonoBehaviour {
 
 	public Transform player;
 
-	StartMenu startMenu;
-
 	public float maxAliveTime = 3f;
 
 	float curAliveTime;
-
-	public GameObject RedFlashImage;
-
-	public GameObject WarningText;
 
 	public int playArea = 200;
 
@@ -49,18 +43,11 @@ public class PlayZoner : MonoBehaviour {
 			print("playy-" + (int)player.transform.position.z);
 			*/
 			OnOutsideZone();
-
-			RedFlashImage.SetActive(true);
-
-			WarningText.SetActive(true);
 		}
 		else if (isInBounds)
 		{
 			curAliveTime = maxAliveTime;
 			isDead = false;
-
-			RedFlashImage.SetActive(false);
-			WarningText.SetActive(false);
 		}
 	}
 
