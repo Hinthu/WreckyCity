@@ -42,7 +42,6 @@ public class StartMenu : MonoBehaviour {
 			SceneManager.LoadScene("Main");
 		}
 
-		//BOB
 		*/
 	}
 
